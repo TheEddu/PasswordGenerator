@@ -1,0 +1,71 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-color: #badeec;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    border: 2px solid darkblue;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: rgb(245, 234, 234); 
+    padding: 12px;
+    margin: 0;
+}
+
+label {
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+input[type="number"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.information {
+    background-color: rgb(210, 245, 247); 
+    padding: 10px;
+    margin: 0;
+}

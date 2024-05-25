@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas Seguras</h1>
+        <form id="password-form">
+            <label for="length">Comprimento da senha:</label>
+            <input type="number" id="length" name="length" min="6" max="99" value="16">
+            <blockquote>
+                O limite de caracteres é 99.
+            </blockquote>
+            <label>
+                <input type="checkbox" id="include-uppercase" checked> Incluir letras maiúsculas
+            </label>
+            <label>
+                <input type="checkbox" id="include-numbers" checked> Incluir números
+            </label>
+            <label>
+                <input type="checkbox" id="include-special-chars" checked> Incluir caracteres especiais
+            </label>
+            
+            <button type="submit">Gerar Senha</button>
+        </form>
+        <div id="result"></div>
+
+        <h2>Sobre o projeto</h2>
+        <div class="information">
+            <p>O Gerador de Senhas Seguras é uma aplicação web desenvolvida em Python com Flask no backend e HTML, CSS e JavaScript no frontend. O objetivo deste projeto é permitir que os usuários possam gerar senhas seguras de forma fácil e personalizável.</p>
+        </div>
+
+        <h2>Funcionalidades:</h2>
+        <div class="information">
+            <p>Personalização da Senha: Os usuários podem personalizar o comprimento da senha e escolher se desejam incluir letras maiúsculas, números e caracteres especiais.</p>
+
+            <p>Validação Dinâmica: O comprimento máximo da senha é ajustado dinamicamente com base no valor inserido pelo usuário para garantir que ele não exceda o limite permitido.</p>
+
+            <p>Geração de Senhas: Quando o usuário submete o formulário, uma requisição é enviada ao servidor Flask, que gera uma senha aleatória baseada nas preferências do usuário.</p>
+
+            <p>Exibição da Senha Gerada: A senha gerada é exibida na página para que o usuário possa copiá-la e usá-la conforme necessário.</p>
+        </div>
+
+        <h2>Benefícios:</h2>
+        <div class="information">
+            <p>Segurança Aprimorada: Senhas geradas aleatoriamente são mais seguras do que senhas criadas manualmente, pois são menos previsíveis para ataques.</p>
+
+            <p>Facilidade de Uso: A interface intuitiva torna simples para os usuários personalizarem e gerarem suas senhas de forma rápida e conveniente.</p>
+
+            <p>Flexibilidade: A capacidade de personalizar o comprimento e os tipos de caracteres permite que os usuários adaptem as senhas às necessidades específicas de segurança de cada situação.</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
