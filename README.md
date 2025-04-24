@@ -21,7 +21,7 @@ O **Gerador de Senhas Seguras** é uma aplicação web desenvolvida em Python co
 
 1. **Clone o repositório**:
     ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/TheEddu/PasswordGenerator.git
    cd PasswordGenerator
 
 **Crie um ambiente virtual**:
