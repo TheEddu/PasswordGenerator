@@ -25,16 +25,13 @@ O **Gerador de Senhas Seguras** é uma aplicação web desenvolvida em Python co
    cd PasswordGenerator
 
 **Crie um ambiente virtual**:
-    ```bash
     python -m venv .venv
     source .venv/bin/activate  # No Windows: .venv\Scripts\activate
 
 **Instale as dependências:**
-    ```bash
     pip install -r requirements.txt
 
 **Inicie o servidor Flask:**
-    ```bash
     python password_generator.py
 
 Acesse a aplicação: Abra o navegador e vá para http://127.0.0.1:5000.
