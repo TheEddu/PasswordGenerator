@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Senhas Seguras</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl shadow-lg max-w-2xl w-full p-6 space-y-6">
+    <h1 class="text-2xl font-bold text-center text-gray-800">Gerador de Senhas Seguras</h1>
+
+    <form id="password-form" class="space-y-4">
+      <div>
+        <label for="length" class="block font-medium text-gray-700">Comprimento da senha:</label>
+        <input
+          type="number"
+          id="length"
+          name="length"
+          min="6"
+          max="60"
+          value="16"
+          class="w-full mt-1 p-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-300"
+        />
+        <blockquote class="text-sm text-gray-500 mt-1">O limite de caracteres é 60.</blockquote>
+      </div>
+
+      <div class="space-y-2">
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" id="include-uppercase" checked class="accent-indigo-600" />
+          <span>Incluir letras maiúsculas</span>
+        </label>
+
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" id="include-numbers" checked class="accent-indigo-600" />
+          <span>Incluir números</span>
+        </label>
+
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" id="include-special-chars" checked class="accent-indigo-600" />
+          <span>Incluir caracteres especiais</span>
+        </label>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition"
+      >
+        Gerar Senha
+      </button>
+    </form>
+
+    <div id="result" class="text-center text-lg font-semibold text-indigo-700"></div>
+
+    <div class="space-y-4">
+      <h2 class="text-xl font-semibold text-gray-800">Sobre o projeto</h2>
+      <p class="text-gray-700">
+        O Gerador de Senhas Seguras é uma aplicação web desenvolvida em Python com Flask no backend, acompanhado de Javascript com HTML e CSS. O objetivo deste projeto é permitir que os usuários possam gerar senhas seguras de forma fácil e personalizável.
+      </p>
+
+      <h2 class="text-xl font-semibold text-gray-800">Funcionalidades:</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Personalização da senha com comprimento e tipos de caracteres.</li>
+        <li>Validação dinâmica do comprimento máximo permitido.</li>
+        <li>Geração de senhas aleatórias pelo backend em Python.</li>
+        <li>Exibição direta da senha gerada ao usuário.</li>
+      </ul>
+
+      <h2 class="text-xl font-semibold text-gray-800">Benefícios:</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Senhas mais seguras e difíceis de prever.</li>
+        <li>Interface simples e intuitiva.</li>
+        <li>Flexibilidade para diferentes necessidades de segurança.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
