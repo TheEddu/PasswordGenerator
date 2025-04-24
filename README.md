@@ -1,6 +1,6 @@
 # Gerador de Senhas Seguras
 
-O **Gerador de Senhas Seguras** é uma aplicação web desenvolvida em Python com Flask no backend e JavaScript no frontend. O objetivo do projeto é permitir que os usuários gerem senhas seguras de forma fácil e personalizável, garantindo maior segurança para suas contas e dados.
+O **Gerador de Senhas Seguras** é uma aplicação web desenvolvida em Python com Flask e JavaScript. O objetivo do projeto é permitir que os usuários gerem senhas seguras de forma fácil e personalizável..
 
 ## Funcionalidades
 
@@ -15,9 +15,6 @@ O **Gerador de Senhas Seguras** é uma aplicação web desenvolvida em Python co
 - **Frontend**: HTML, CSS (TailwindCSS) e JavaScript
 - **Outras Dependências**: Veja o arquivo [`requirements.txt`](requirements.txt) para a lista completa.
 
-## Estrutura do Projeto
-PasswordGenerator/ ├── .gitignore ├── password_generator.py # Código principal do backend Flask ├── README.md # Documentação do projeto ├── requirements.txt # Dependências do projeto ├── static/ │ └── script.js # Código JavaScript para interação com o backend ├── templates/ │ └── index.html # Página principal da aplicação └── .dist/ # Diretório para arquivos gerados (ignorado pelo Git)
-
 
 
 ## Como Executar o Projeto
@@ -27,19 +24,18 @@ PasswordGenerator/ ├── .gitignore ├── password_generator.py # Códig
    git clone <URL_DO_REPOSITORIO>
    cd PasswordGenerator
 
-
-
-
-
 **Crie um ambiente virtual**:
-python -m venv .venv
-source .venv/bin/activate  # No Windows: .venv\Scripts\activate
+    ```bash
+    python -m venv .venv
+    source .venv/bin/activate  # No Windows: .venv\Scripts\activate
 
 **Instale as dependências:**
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 
 **Inicie o servidor Flask:**
-python password_generator.py
+    ```bash
+    python password_generator.py
 
 Acesse a aplicação: Abra o navegador e vá para http://127.0.0.1:5000.
 
